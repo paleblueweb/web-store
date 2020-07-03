@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+
+    <link rel="stylesheet" type="text/css"  href="styles/stylesheet.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap" rel="stylesheet">
+    <script src="js/script.js"></script>
+
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Wanderlust</h1>
+            <h4>Adventurous Agency</h4>
+        </div>
+        <div>
+            <img src="assets\logo vetorizado.png" alt="logo" class="logo" >
+        </div>
+    </header>
+    <div class="navhorizontal" >
+        <button class="dropbtn" ><a href="index.html">Inicio</a></button>
+        <button class="dropbtn" ><a href="historia.html">Historia</a></button>
+        <div class="dropdown">
+            <button class="dropbtn" ><a href="produtos.html">Produtos</a></button>
+            <div class="dropdown-content">
+              <a href="africa.html">Africa</a>
+              <a href="america-norte.html">America do Norte</a>
+              <a href="oceania.html">Oceania</a>
+            </div>
+          </div>
+          <button class="dropbtn" ><a href="contato.html">Contato</a></button>
+    </div>
+   <div class="form">
+       <br>
+     
+       <p id="enviado-id" style="display: nome;"></p><br>
+       <form id="contactForm" onsubmit="submeter(event)">
+            <h1 id="titulo">Fale Conosco!</h1>
+           <label for="nome">Nome</label>
+           <input id="nome-id"type="text">
+           <p id="errorMessage-nome" style="display: none; padding-top:0px;"></p><br>
+           <label for="e-mail">E-mail</label><br>
+           <input id="e-mail-id" type="email"><br>
+           <p id="errorMessage-email" style="display: none;"></p><br>
+           <br>
+           <fieldset id="radio-id">
+                <label for="categoria">Categoria do Produto:</label><br>
+                <input type="radio" name="categoria-id" value="America do Norte" id="america-norte" class="categoria">
+                <label for="europa">America do Norte</label><br>
+                <input type="radio" name="categoria-id" value="Africa" id="africa" class="categoria">
+                <label for="africa">Africa</label><br>
+                <input type="radio" name="categoria-id" value="Oceania" id="oceania" class="categoria">
+                <label for="oceania">Oceania</label><br>
+           </fieldset>
+           <p id="errorMessage-categoria" style="display: nome;"></p><br>
+           <label  for="telefone">Telefone</label><br>
+           <input id="telefone-id" type="tel"><br>
+           <p id="errorMessage-telefone" style="display: nome;"></p><br>
+           <label for="assunto">Assunto</label><br>
+           <input id="assunto-id" type="text"><br>
+           <p id="errorMessage-assunto" style="display: nome;"></p><br>
+           <br>
+           <label for="mensagem">Mensagem</label>
+           <textarea id="mensagem-id" cols="30" rows="10" maxlength="200"></textarea>
+           <p id="errorMessage-mensagem" style="display: nome;"></p>
+           <br>
+           <input type="submit" value="Submit">
+           <input type="reset">
+       </form>
+   </div>
+    <footer>
+        <p>Wanderlust - Adventure Tourism</p>
+        <p>Telefone: +55 48 99999 99999</p>
+        <p>E-mail: wanderlust@wanderlust.com</p>
+        <p>Endereço: Rua Around the World - Planet Earth</p>
+    </footer>
+
+    
+</body>
+</html>
